@@ -4,100 +4,201 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,
-500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-<title>Em busca da cidade perdida</title>
+<title>Fazendo uma Pizza</title>
 </head>
 <body>
 <main>
+
+<!-- PASSO 0 — Introdução -->
+<img src="imagem/livr" alt="Caderno de receitas antigo">
 <div class="passo ativo" id="passo-0">
-<img src="img/cenario-passo0.png" alt="">
-<p>Um dia desses, dentro de um livro da biblioteca da escola, eu descobri uma carta
-antiga sobre uma cidade perdida, escondida por riquezas e belezas naturais. Nessa carta, a
-autora deixa algumas pistas para encontrar essa cidade e eu decidi segui-las!</p>
-<button class="btn-proximo" data-proximo="1">Rio de Janeiro</button>
-<button class="btn-proximo" data-proximo="2">Pernambuco</button>
+<p>Um dia desses, na cozinha da minha casa, encontrei um velho caderno de receitas da minha avó.
+Em uma das páginas havia uma receita secreta de como fazer a pizza perfeita, cheia de etapas,
+decisões e combinações diferentes. Decidi seguir a receita e criar minha própria pizza do zero!
+E tudo começa pela massa…</p>
+
+<button class="btn-proximo" data-proximo="1">Preparar a massa</button>
 </div>
+
+<!-- PASSO 1 — Escolher tipo de massa -->
 <div class="passo" id="passo-1">
-<p>Você começa sua jornada no Rio de Janeiro, subindo o Pico da Tijuca ao amanhecer
-para encontrar a primeira pista.</p>
-<button class="btn-proximo" data-proximo="3">Procurar a pista no topo do
-pico</button>
-<button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
+<img src="img/massa-tipos.png" alt="Escolhendo o tipo de massa">
+<p>A primeira etapa é escolher o tipo de massa. Qual caminho você quer seguir?</p>
+
+<button class="btn-proximo" data-proximo="2">Massa Tradicional</button>
+<button class="btn-proximo" data-proximo="3">Massa Fina e Crocante</button>
+<button class="btn-proximo" data-proximo="4">Massa Pan (grossa e fofa)</button>
+<button class="btn-proximo" data-proximo="5">Massa Integral</button>
 </div>
+
+<!-- PASSO 2 — Massa Tradicional -->
 <div class="passo" id="passo-2">
-<p>Em Pernambuco, você visita a histórica cidade de Olinda. Na carta, uma das pistas
-indica que para localizar a entrada para a cidade perdida você deve procurar a próxima pista
-em um dos pontos turísticos da cidade. Por qual você começa?</p>
-<button class="btn-proximo" data-proximo="5">Investigar as igrejas antigas</button>
-<button class="btn-proximo" data-proximo="6">Explorar as praias próximas</button>
+<p>A massa tradicional cresce perfeitamente! Agora você pode preparar o molho.</p>
+
+<button class="btn-proximo" data-proximo="6">Escolher o molho</button>
 </div>
+
+<!-- PASSO 3 — Massa Fina -->
 <div class="passo" id="passo-3">
-<p>No topo do Pico da Tijuca, você encontra uma antiga inscrição apontando que a
-próxima pista está
-localizada no Amazonas.</p>
-<button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
+<img src="img/queijo-tipos.png" alt="Escolhendo o queijo">
+<p>A massa fina abre facilmente e fica crocante. Ótima escolha!</p>
+
+<button class="btn-proximo" data-proximo="6">Escolher o molho</button>
 </div>
+
+<!-- PASSO 4 — Massa Pan -->
 <div class="passo" id="passo-4">
-<img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e
-desitindo da aventura">
-<p>Você decide que a aventura é grande demais e volta para casa, mas sempre se
-pergunta o que teria
-encontrado.</p>
+<img src="img/queijo-tipos.png" alt="Escolhendo o queijo">
+<p>A massa pan ficou alta e macia. Parece uma nuvem!</p>
+
+<button class="btn-proximo" data-proximo="6">Escolher o molho</button>
 </div>
 
+<!-- PASSO 5 — Massa Integral (final alternativo de erro) -->
 <div class="passo" id="passo-5">
-<p>Nas igrejas de Olinda, você descobre um mapa antigo escondido atrás de um altar,
-apontando que a próxima
-pista está no Amazonas.</p>
-<button class="btn-proximo" data-proximo="7">Viajar para o Amazonas</button>
-</div>
-<div class="passo" id="passo-6">
-<p>Explorando as praias, você encontra uma caverna escondida, mas ela leva a um beco
-sem saída.</p>
-<button class="btn-proximo" data-proximo="8">Voltar e explorar as igrejas</button>
-</div>
-<div class="passo" id="passo-7">
-<p>No Amazonas, a busca pela cidade perdida se intensifica. Você se depara com um rio
-bifurcado.</p>
-<button class="btn-proximo" data-proximo="9">Seguir pelo rio à esquerda</button>
-<button class="btn-proximo" data-proximo="10">Seguir pelo rio à direita</button>
-</div>
-<div class="passo" id="passo-8">
-<p>De volta às igrejas, você finalmente encontra o mapa antigo. Agora, para o
-Amazonas!</p>
-<button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
-</div>
-<div class="passo" id="passo-9">
-<p>O rio à esquerda leva você a uma cachoeira escondida com inscrições antigas que
-revelam a entrada da
-cidade perdida.</p>
-<button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
-</div>
-<div class="passo" id="passo-10">
-<p>O rio à direita termina em uma área pantanosa. Apesar de belas vistas, não há sinais
-da cidade perdida
-aqui.</p>
-<button class="btn-proximo" data-proximo="12">Retornar e tentar o outro
-rio</button>
-</div>
-<div class="passo" id="passo-11">
-<img src="img/cenario-passo11-cidade-perdida.png" alt="encontrando uma cidade
-maravilhosa perdida no Amazonas">
-<p>Dentro da cidade perdida, você descobre tesouros inimagináveis e decide se dedicar
-a estudar e preservar
-este lugar</p>
-</div>
-<div class="passo" id="passo-12">
+<img src="img/queijo-tipos.png" alt="Escolhendo o queijo">
+<p>Você colocou pouca água e a massa integral ficou pesada e dura.  
+O caderno diz: “Respire fundo e tente novamente”.</p>
 
-<p>Retornando e escolhendo o rio à esquerda, você finalmente encontra a cachoeira
-escondida e as inscrições
-que levam à cidade perdida.</p>
-<button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
+<button class="btn-proximo" data-proximo="1">Tentar outra massa</button>
 </div>
+
+<!-- PASSO 6 — Escolher molho -->
+<div class="passo" id="passo-6">
+<p>Com a massa pronta, é hora do molho! Qual você escolhe?</p>
+
+<button class="btn-proximo" data-proximo="7">Molho de Tomate Clássico</button>
+<button class="btn-proximo" data-proximo="8">Molho Branco</button>
+<button class="btn-proximo" data-proximo="9">Molho Pesto</button>
+<button class="btn-proximo" data-proximo="10">Molho Picante</button>
+</div>
+
+<!-- PASSO 7 — Tomate -->
+<div class="passo" id="passo-7">
+<p>O molho clássico combina com qualquer pizza! Agora escolha os queijos:</p>
+
+<button class="btn-proximo" data-proximo="11">Escolher queijos</button>
+</div>
+
+<!-- PASSO 8 — Molho Branco (erro) -->
+<div class="passo" id="passo-8">
+<p>O molho branco talhou porque ficou muito quente!  
+Talvez seja melhor tentar de novo.</p>
+
+<button class="btn-proximo" data-proximo="6">Escolher outro molho</button>
+</div>
+
+<!-- PASSO 9 — Pesto -->
+<div class="passo" id="passo-9">
+<p>O cheiro do pesto invadiu a cozinha! Maravilhoso.</p>
+
+<button class="btn-proximo" data-proximo="11">Escolher queijos</button>
+</div>
+
+<!-- PASSO 10 — Picante (erro) -->
+<div class="passo" id="passo-10">
+<p>O molho ficou tão picante que até o fogão chorou! Melhor escolher outro.</p>
+
+<button class="btn-proximo" data-proximo="6">Escolher outro molho</button>
+</div>
+
+<!-- PASSO 11 — Escolher queijos -->
+<div class="passo" id="passo-11">
+<p>Agora vem uma das melhores partes: os queijos! Qual combinação você quer?</p>
+
+<button class="btn-proximo" data-proximo="12">Mussarela</button>
+<button class="btn-proximo" data-proximo="13">Queijo Cheddar</button>
+<button class="btn-proximo" data-proximo="14">Queijo de Cabra</button>
+<button class="btn-proximo" data-proximo="15">Mix Especial (3 queijos)</button>
+</div>
+
+<!-- PASSO 12 — Mussarela -->
+<div class="passo" id="passo-12">
+<p>A mussarela derrete lindamente! Agora faltam os recheios.</p>
+<button class="btn-proximo" data-proximo="16">Escolher sabores</button>
+</div>
+
+<!-- PASSO 13 — Cheddar -->
+<div class="passo" id="passo-13">
+<p>Cheddar dá um sabor forte! A pizza vai ser poderosa!</p>
+<button class="btn-proximo" data-proximo="16">Escolher sabores</button>
+</div>
+
+<!-- PASSO 14 — Cabra -->
+<div class="passo" id="passo-14">
+<p>Queijo de cabra deixa tudo mais sofisticado. Chique!</p>
+<button class="btn-proximo" data-proximo="16">Escolher sabores</button>
+</div>
+
+<!-- PASSO 15 — Mix -->
+<div class="passo" id="passo-15">
+<p>O mix de queijos derrete e espalha aroma pela cozinha. Perfeito!</p>
+<button class="btn-proximo" data-proximo="16">Escolher sabores</button>
+</div>
+
+<!-- PASSO 16 — Toppings -->
+<div class="passo" id="passo-16">
+<p>Agora escolha os sabores! Qual sabor você quer?</p>
+
+<button class="btn-proximo" data-proximo="17">Tradicional(presunto, tomate, azeitona)</button>
+<button class="btn-proximo" data-proximo="18">Carnes (bacon, frango, calabresa)</button>
+<button class="btn-proximo" data-proximo="19">Vegetariana (pimentão, cebola, cogumelo)</button>
+<button class="btn-proximo" data-proximo="20">Gourmet (rúcula, tomate seco, parmesão)</button>
+</div>
+
+<!-- PASSO 17 -->
+<div class="passo" id="passo-17">
+<p>A pizza clássica está linda! Hora de assar.</p>
+<button class="btn-proximo" data-proximo="21">Assar pizza</button>
+</div>
+
+<!-- PASSO 18 -->
+<div class="passo" id="passo-18">
+<p>A pizza de Carnes ficou recheadíssima!</p>
+<button class="btn-proximo" data-proximo="21">Assar pizza</button>
+</div>
+
+<!-- PASSO 19 -->
+<div class="passo" id="passo-19">
+<p>A pizza vegetariana ficou colorida e cheirosa!</p>
+<button class="btn-proximo" data-proximo="21">Assar pizza</button>
+</div>
+
+<!-- PASSO 20 -->
+<div class="passo" id="passo-20">
+<p>Uma pizza gourmet digna de restaurante!</p>
+<button class="btn-proximo" data-proximo="21">Assar pizza</button>
+</div>
+
+<!-- PASSO 21 — Escolher forno -->
+<div class="passo" id="passo-21">
+<p>Qual será a temperatura do forno?</p>
+
+<button class="btn-proximo" data-proximo="22">220°C (ideal)</button>
+<button class="btn-proximo" data-proximo="23">250°C (muito forte)</button>
+<button class="btn-proximo" data-proximo="24">180°C (fraco demais)</button>
+</div>
+
+<!-- PASSO 22 — Final bom -->
+<div class="passo" id="passo-22">
+<p>A pizza saiu do forno dourada, cheirosa e deliciosa.  
+PARABÉNS! Você completou a Jornada da Pizza Perfeita!</p>
+</div>
+
+<!-- PASSO 23 — Final médio -->
+<div class="passo" id="passo-23">
+<p>O forno muito quente queimou um pouquinho a borda…  
+Mas a pizza ainda ficou boa!</p>
+<button class="btn-proximo" data-proximo="22">Final feliz</button>
+</div>
+
+<!-- PASSO 24 — Final ruim -->
+<div class="passo" id="passo-24">
+<p>O forno estava fraco demais e a pizza ficou crua no meio.  
+Mas não desista — todo pizzaiolo aprende errando!</p>
+<button class="btn-proximo" data-proximo="0">Tentar novamente</button>
+</div>
+
 </main>
 <script src="script.js"></script>
 </body>
